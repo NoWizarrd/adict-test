@@ -27,7 +27,7 @@
 
     &__rhomb {
         background-color: #252525;
-        margin-left: 90px;
+        margin-left: 6%;
         margin-bottom: 30px;
         width: 10px;
         height: 10px;
@@ -44,8 +44,8 @@
         margin-top: 60px;
     }
     &__image {
-        width: 1440;
-        height: 720;
+        max-width: 100%;
+        height: auto;
         margin-top: 44px;
     }
     &__btn {
@@ -74,8 +74,8 @@
     color: #FFF5DA;
     background: #1B1464;
     &__text {
-        width: 490px;
-        height: 269px;
+        max-width: 490px;
+        max-height: 269px;
         margin-top: 80px;
         margin-left: 90px;
     }
@@ -147,7 +147,7 @@
     }
 
     &__right-block {
-        width: 776px;
+        max-width: 776px;
         margin-top: 82px;
         margin-right: calc(5vw - 8px);
     }
@@ -159,6 +159,11 @@
         letter-spacing: 1px;
         vertical-align: middle;
         margin-bottom: 32px;
+        @media (max-width: 1350px) {
+            font-size: 80px;
+            line-height: 76px;
+
+        }
     }
 
     &__intro {
@@ -203,7 +208,7 @@
     gap: 3vh;
     width: 100%;
     padding: calc(8vh + 4px) calc(5vw - 5px);
-    height: 943px;
+    min-height: 943px;
     background: #FFF5DA;
 
     &__intro{
@@ -230,13 +235,12 @@
     &__grid {  
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     gap: 48px 60px;
     grid-auto-flow: row;
-    grid-template-areas:
-        ". . . ."
-        ". . . .";
     margin-bottom: 35px;
+    @media (max-width: 1400px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
     }
 
     &__button {

@@ -1,0 +1,131 @@
+.registration-page {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1440px;
+    flex-direction: column;
+}
+
+.registration-wrapper {
+    background-color: #D5E1E1;
+    color: #252525;
+}
+
+.registration-content {
+    flex-direction: column;
+    display: flex;
+    margin: 84px 90px;
+}
+
+.registration-head {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21.6px;
+    letter-spacing: -0.16px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    &__img {
+        margin-right: 12px;
+    }
+}
+
+.registration-info {
+    display: flex;
+    gap: 8vw;
+    justify-content: space-between;
+
+    .left-text {
+        display: flex;
+        font-weight: 300;
+        font-size: 23.25px;
+        line-height: 31.2px;
+        letter-spacing: 0.4px;
+        vertical-align: middle;
+    }
+
+    .right-content {
+        display: flex;
+        margin-top: -10px;
+        flex-direction: column;
+
+        &__header {
+            font-weight: 300;
+            font-size: 31.5px;
+            line-height: 41.6px;
+            letter-spacing: 1.5px;
+            vertical-align: middle;
+            margin-bottom: 23px;
+        }
+    }
+}
+
+.info-block {
+    border-radius: 8px;
+    margin-bottom: 24px;
+    padding: 32px;
+    border: 2px dashed #252525;
+
+    &__big-text {
+        font-weight: 300;
+        font-size: 47.63px;
+        line-height: 55.2px;
+        letter-spacing: 1.7px;
+        vertical-align: middle;
+    }
+
+    &__medium-text {
+        margin-top: 25px;
+        margin-bottom: -10px;
+        font-weight: 300;
+        font-size: 23.63px;
+        line-height: 31.2px;
+        letter-spacing: 0.7px;
+        vertical-align: middle;
+    }
+
+    &__price {
+        font-weight: 300;
+        margin-top: 25px;
+        font-size: 23px;
+        line-height: 55.2px;
+        letter-spacing: 1.4px;
+        vertical-align: middle;
+    }
+
+    &__big-text {
+        font-weight: 300;
+        font-size: 47.63px;
+        line-height: 55.2px;
+        letter-spacing: 1.7px;
+        vertical-align: middle;
+    }
+
+    &__outer-text {
+        @extend .right-content__header;
+        margin-top: 40px;
+    }
+}
+
+.under-footer-re {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0 70px;
+    height: 16px;
+    margin-top: -16px;
+    background: #12A720;
+
+    &__element {
+        height: 16px;
+        background: #FFFF00;
+
+
+    }
+}
+
+.first {
+    width: 272px;
+}
+.second {
+    width: 948px;
+}

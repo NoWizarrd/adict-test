@@ -5,9 +5,15 @@ import headerLogo from '../../assets/images/header-logo-speakers.png'
 import './SpeakersPage.scss'
 import { Link } from 'react-router'
 import { speakers } from '../../data/speakers'
+import { useLayoutEffect } from 'react'
 
 
 export default function SpeakersPage() {
+    
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
+
   return (
     <div className="speakers-page">
         <section className='speakers-content'>

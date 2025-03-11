@@ -86,7 +86,7 @@ export default function HomePage() {
               builders to the future of product
               development.
             </p>
-            <Link to={'/speakers'} className="speakers__button">
+            <Link to={'/speakers'}  className="speakers__button">
               see all speakers
             </Link>
           </div>
