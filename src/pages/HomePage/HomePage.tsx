@@ -1,4 +1,4 @@
-import Header from "../../components/header/Header";
+import { Link } from "react-router";
 import config from '../../assets/images/config_preview.png'
 import picture from '../../assets/images/first-block-image.png'
 import btn from '../../assets/images/first-block-btn.png'
@@ -12,11 +12,9 @@ import freepik from '../../assets/images/sponsors/freepik.png'
 import locofy from '../../assets/images/sponsors/locofy.png'
 import notion from '../../assets/images/sponsors/notion.png'
 import rangle from '../../assets/images/sponsors/rangle.png'
-
-
 import Footer from "../../components/Footer/Footer";
 import './HomePage.scss'
-import { Link } from "react-router";
+import '../../components/header/Header.scss'
 
 const sponsorInages = [coda, ditto, dscout, freepik, locofy, rangle, atlassian, notion]
 
@@ -24,7 +22,20 @@ export default function HomePage() {
   return (
     <div className="main-page">
         <section className="first-block">
-          <Header/>
+        <header className="header">
+            <div className='header__title'>
+                Figma’s conference for people<br/>
+                who build products
+            </div>
+            <div className='header__buttons'>
+                <Link to={'/speakers'} className='header__buttons--speakers'>
+                    speakers
+                </Link>
+                <Link to={'/registration'} className='header__buttons--get-tickets'>
+                    get tickets
+                </Link>
+            </div>
+        </header>
           <div className="first-block__rhomb"/>
           <div className="first-block__text">
             <p>
@@ -114,11 +125,11 @@ export default function HomePage() {
               see all sponsors
             </button>
         </section>
-        <div className="under-footer">
-          <div className="under-footer__element"/>
-          <div className="under-footer__element"/>
-          <div className="under-footer__element"/>
-          <div className="under-footer__element"/>
+        <div className="under-footer-hp">
+          <div className="under-footer-hp__element"/>
+          <div className="under-footer-hp__element"/>
+          <div className="under-footer-hp__element"/>
+          <div className="under-footer-hp__element"/>
         </div>
         <Footer/>
     </div>

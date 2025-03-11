@@ -5,9 +5,8 @@
     height: 106px;
     text-transform: uppercase;
     padding: 0 6%;
-
+    
     &__buttons {
-
         &--speakers {
             border: none;
             text-decoration: none;
@@ -26,6 +25,7 @@
         }
 
         &--get-tickets {
+            text-decoration: none;
             border: none;
             color: #D5E1E1;
             padding: 20px 34px;
@@ -42,5 +42,16 @@
                 cursor: pointer;
             }
         }
+
+        .btn1-speakers {
+            border-bottom: 2px dashed #FFF5DA;
+            color: #FFF5DA;
+        }
+
+        .btn2-speakers {
+            color: #252525;
+            background: #FFF5DA;
+        }
+
     }
 }
