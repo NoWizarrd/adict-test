@@ -25,6 +25,13 @@
     position: relative;
     height: 1260px;
 
+    &__config {
+        max-width: 1400px;
+        width: 88%;
+        height: auto;
+        margin: 6vh 5vw;
+      }
+
     &__rhomb {
         background-color: #252525;
         margin-left: 6%;
@@ -39,14 +46,13 @@
         gap: 90px;
         text-transform: uppercase;
     }
-    &__config {
-        margin-left: 6%;
-        margin-top: 60px;
-    }
+
     &__image {
+        position: absolute;
         max-width: 100%;
+        bottom: -1px;
+        left: 0;
         height: auto;
-        margin-top: 44px;
     }
     &__btn {
         position: absolute;

@@ -1,22 +1,15 @@
 import { Link } from "react-router";
-import config from '../../assets/images/config_preview.png'
 import picture from '../../assets/images/first-block-image.png'
 import btn from '../../assets/images/first-block-btn.png'
 import clockIcon from '../../assets/images/clock-icon.svg'
 import snowflake from '../../assets/images/snowflake.svg'
-import atlassian from '../../assets/images/sponsors/atlassian.png'
-import coda from '../../assets/images/sponsors/coda.png'
-import ditto from '../../assets/images/sponsors/ditto.png'
-import dscout from '../../assets/images/sponsors/dscout.png'
-import freepik from '../../assets/images/sponsors/freepik.png'
-import locofy from '../../assets/images/sponsors/locofy.png'
-import notion from '../../assets/images/sponsors/notion.png'
-import rangle from '../../assets/images/sponsors/rangle.png'
+import config from '../../assets/images/config_preview.png'
 import Footer from "../../components/Footer/Footer";
+import { sponsorImages } from "../../data/sponsors";
 import './HomePage.scss'
 import '../../components/header/Header.scss'
+// import AnimationConfig from "../../components/config_animation/animation";
 
-const sponsorInages = [coda, ditto, dscout, freepik, locofy, rangle, atlassian, notion]
 
 export default function HomePage() {
   return (
@@ -47,7 +40,8 @@ export default function HomePage() {
               San Francisco, CA
             </p>
           </div>
-          <img src={config} width={1260} height={246} className="first-block__config"/>
+          {/* <AnimationConfig/> */}
+          <img src={config} alt="first-block__config" className="first-block__config"/>
           <img src={picture} alt="first-block__image" className="first-block__image"/>
           <button className="first-block__btn">
             <img src={btn} alt="first-block__btn"/>
@@ -116,7 +110,7 @@ export default function HomePage() {
             </p>
             <div className="sponsors__grid">
               {
-                sponsorInages.map(image => (
+                sponsorImages.map(image => (
                   <img src={image} alt={image} className="sponsors__grid--image"/>
                 ))
               }
