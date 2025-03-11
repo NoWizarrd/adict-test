@@ -124,6 +124,11 @@
         border: 2px dashed #FFF5DA;
         font-weight: 300;
         text-transform: uppercase;
+        transition: 0.5s ease;
+        &:hover{
+            cursor: pointer;
+            background: #0f704e;
+        }
     }
 }
 

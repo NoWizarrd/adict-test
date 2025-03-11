@@ -18,9 +18,11 @@
             letter-spacing: -0.24px;
             vertical-align: middle;
             border-bottom: 2px dashed #252525;
-            margin-right: 23px;
+            transition: 0.3s ease-in-out;
             &:hover {
                 cursor: pointer;
+                color: #7e7070;
+                border-bottom: 2px dashed #7e7070;
             }
         }
 
@@ -31,6 +33,7 @@
             padding: 20px 34px;
             background: #252525;
             border-radius: 60px;
+            margin-left: 23px;
             text-transform: uppercase;
             font-weight: 400;
             font-size: 16px;
@@ -38,14 +41,22 @@
             letter-spacing: -0.24px;
             vertical-align: middle;
             margin-right: 6px;
+            transition: 0.2s ease-in;
             &:hover {
                 cursor: pointer;
+                box-shadow: 3px 4px 10px grey;
             }
         }
 
         .btn1-speakers {
             border-bottom: 2px dashed #FFF5DA;
             color: #FFF5DA;
+            transition: 0.3s ease-in-out;
+            &:hover {
+                cursor: pointer;
+                color: #252525;
+                border-bottom: 2px dashed #252525;
+            }
         }
 
         .btn2-speakers {

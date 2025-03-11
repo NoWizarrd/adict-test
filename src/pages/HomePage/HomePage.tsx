@@ -117,7 +117,7 @@ export default function HomePage() {
             <div className="sponsors__grid">
               {
                 sponsorInages.map(image => (
-                  <img src={image} alt={image}/>
+                  <img src={image} alt={image} className="sponsors__grid--image"/>
                 ))
               }
             </div>
