@@ -1,3 +1,4 @@
+import { Link } from 'react-router'
 import './Header.scss'
 
 export default function Header() {
@@ -8,12 +9,12 @@ export default function Header() {
             who build products
         </div>
         <div className='header__buttons'>
-            <button className='header__buttons--speakers'>
+            <Link to={'/speakers'} className='header__buttons--speakers'>
                 speakers
-            </button>
-            <button className='header__buttons--get-tickets'>
+            </Link>
+            <Link to={'/registration'} className='header__buttons--get-tickets'>
                 get tickets
-            </button>
+            </Link>
         </div>
     </header>
   )

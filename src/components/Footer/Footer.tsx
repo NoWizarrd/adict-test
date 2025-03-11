@@ -3,6 +3,7 @@ import config from '../../assets/images/config.png'
 import arrowDown from '../../assets/images/arrow-down.png'
 import planetICon from '../../assets/images/planet-icon.png'
 import './Footer.scss'
+import { Link } from 'react-router'
 
 export default function Footer() {
   return (
@@ -14,45 +15,45 @@ export default function Footer() {
             <div className="first-section__links">
               <div className="first-section__links--column">
                 <h4 className='first-section__links--header'>menu</h4>
-                <p>speakers</p>
-                <p>get tickets</p>
+                <Link to={'/speakers'}>speakers</Link>
+                <Link to={'/registration'}>get tickets</Link>
               </div>
               <div className="first-section__links--column">
                 <h4 className='first-section__links--header'>resources</h4>
-                <p>
+                <Link to={''}>
                   why attend
                   <img src='src/assets/images/arrow.png' className='arrow'/>
-                </p>
-                <p>faq</p>
-                <p>sponsors</p>
-                <p>
+                </Link>
+                <Link to={''}>faq</Link>
+                <Link to={''}>sponsors</Link>
+                <Link to={''}>
                   hotels
                   <img src='src/assets/images/arrow.png' className='arrow'/>
-                </p>
-                <p>
+                </Link>
+                <Link to={''}>
                   visa letters
                   <img src='src/assets/images/arrow.png' className='arrow'/>
-                </p>
-                <p>
+                </Link>
+                <Link to={''}>
                   Code of conduct
                   <img src='src/assets/images/arrow.png' className='arrow'/>
-                </p>
+                </Link>
               </div>
               <div className="first-section__links--column">
               <h4 className='first-section__links--header'>follow</h4>
-                <p>
+                <Link to={''}>
                   x 
-                  <img src='src/assets/images/arrow.png' className='arrow'/></p>
-                <p>
+                  <img src='src/assets/images/arrow.png' className='arrow'/></Link>
+                <Link to={''}>
                   linkedin 
-                  <img src='src/assets/images/arrow.png' className='arrow'/></p>
-                <p>
+                  <img src='src/assets/images/arrow.png' className='arrow'/></Link>
+                <Link to={''}>
                   instagram 
-                  <img src='src/assets/images/arrow.png' className='arrow'/></p>
-                <p>
+                  <img src='src/assets/images/arrow.png' className='arrow'/></Link>
+                <Link to={''}>
                   youtube 
                   <img src='src/assets/images/arrow.png' className='arrow'/>
-                  </p>
+                  </Link>
               </div>
             </div>
         </div>

@@ -107,6 +107,10 @@
     }
 
     &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
         width: 630px;
         cursor: pointer;
         border: none;
@@ -174,6 +178,8 @@
 
     &__button {
         display: flex;
+        color: #252525;
+        text-decoration: none;
         background: none;
         justify-content: center;
         align-items: center;
@@ -189,7 +195,6 @@
         letter-spacing: -0.2px;
         vertical-align: middle;
         text-transform: uppercase;
-        
     }
 }
 

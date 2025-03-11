@@ -28,11 +28,13 @@
         font-weight: 300;
     }
 
-    &__links--column p {
+    &__links--column a {
+        text-decoration: none;
+        color: #D5E1E1;
+        display: block;
         position: relative;
         font-size: 16px;
         letter-spacing: -0.24px;
-        vertical-align: middle;
         margin-bottom: 18px;
         text-decoration: underline dashed 2px;
         text-underline-offset: 5px;
@@ -55,6 +57,7 @@
     font-size: 15px;
     &__settings {
         align-self: flex-end;
+        cursor: pointer;
     }
 
     &__gap {

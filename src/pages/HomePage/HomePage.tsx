@@ -16,6 +16,7 @@ import rangle from '../../assets/images/sponsors/rangle.png'
 
 import Footer from "../../components/Footer/Footer";
 import './HomePage.scss'
+import { Link } from "react-router";
 
 const sponsorInages = [coda, ditto, dscout, freepik, locofy, rangle, atlassian, notion]
 
@@ -57,9 +58,9 @@ export default function HomePage() {
               most popular talks.
             </p>
           </div>
-          <button className="get-tickets__button">
+          <Link to={'/registration'} className="get-tickets__button">
             Get tickets
-          </button>
+          </Link>
         </section>
         <section className="speakers">
         <div className="speakers__left-block">
@@ -74,9 +75,9 @@ export default function HomePage() {
               builders to the future of product
               development.
             </p>
-            <button className="speakers__button">
+            <Link to={'/speakers'} className="speakers__button">
               see all speakers
-            </button>
+            </Link>
           </div>
           <div className="speakers__right-block">
             <p className="speakers__big-text">
